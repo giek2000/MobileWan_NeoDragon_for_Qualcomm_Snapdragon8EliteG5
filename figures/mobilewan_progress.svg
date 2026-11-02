@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">MobileWan end-to-end time per video</title>
+  <desc id="d">Seconds per 4.8 s video on the Snapdragon 8 Elite Gen 5: 570 first run, 431 O3 and VTCM, 378 NPU tiny VAE, 335 re-exported blocks, 191 fused attention, 147 W8A16.</desc>
+  <rect width="760" height="330" fill="#ffffff"/>
+  <text x="20" y="28" font-size="17" font-weight="600" fill="#1f2328">MobileWan: seconds per 4.8 s video (832x480, 77 frames)</text>
+  <!-- scale: 1 s = 0.85 px, bars start at x=230 -->
+  <g font-size="13" fill="#1f2328">
+    <text x="220" y="67" text-anchor="end">28 Oct · first run</text>
+    <rect x="230" y="52" width="484.5" height="22" fill="#b0b7c3"/>
+    <text x="706" y="68" text-anchor="end" fill="#ffffff" font-weight="600">~570</text>
+
+    <text x="220" y="107" text-anchor="end">29-30 Oct · O3 + VTCM</text>
+    <rect x="230" y="92" width="366.4" height="22" fill="#b0b7c3"/>
+    <text x="604" y="108">431</text>
+
+    <text x="220" y="147" text-anchor="end">30 Oct · tiny VAE on NPU</text>
+    <rect x="230" y="132" width="321.3" height="22" fill="#b0b7c3"/>
+    <text x="559" y="148">378</text>
+
+    <text x="220" y="187" text-anchor="end">30 Oct · re-exported blocks</text>
+    <rect x="230" y="172" width="284.8" height="22" fill="#b0b7c3"/>
+    <text x="523" y="188">335</text>
+
+    <text x="220" y="227" text-anchor="end">31 Oct · fused attention</text>
+    <rect x="230" y="212" width="162.4" height="22" fill="#2f81f7"/>
+    <text x="400" y="228" font-weight="600">191 (FP16)</text>
+
+    <text x="220" y="267" text-anchor="end">1 Nov · W8A16 weights</text>
+    <rect x="230" y="252" width="125" height="22" fill="#8250df"/>
+    <text x="363" y="268" font-weight="600">147 (softer)</text>
+  </g>
+  <line x1="230" y1="44" x2="230" y2="284" stroke="#57606a" stroke-width="1"/>
+  <text x="230" y="310" font-size="12" fill="#57606a">Same prompt, seed and phone. Qualcomm reports ~20 s with W8A8 + QAT and resident weights.</text>
+</svg>
