@@ -1,6 +1,7 @@
 # On-device text-to-video on the Snapdragon 8 Elite Gen 5: running Neodragon and MobileWan on the Hexagon NPU
 
-*Technical report, November 2026.*
+*Technical report, November 2026.
+Ricardo de Koning*
 
 This report describes how we got two of Qualcomm AI Research's mobile video-generation models,
 **Neodragon** and **MobileWan**, running end to end on a phone with a Snapdragon 8 Elite Gen 5
